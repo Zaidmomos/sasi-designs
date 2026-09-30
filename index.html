@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sasi Designs — Nighties &amp; Kurtas</title>
+  <meta name="description" content="Sasi Designs: handpicked Indian nighties and kurtas in soft cotton, rayon and block prints.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Mulish:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announce">Free shipping across India on orders above ₹999 · Easy 7-day exchange</div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="logo" aria-label="Sasi Designs home">
+        <span class="logo-mark">S</span>
+        <span class="logo-text">Sasi <em>Designs</em></span>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="#shop" data-filter-link="nighty">Nighties</a>
+        <a href="#shop" data-filter-link="kurta">Kurtas</a>
+        <a href="#about">Our Story</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button class="cart-btn" id="cartBtn" aria-label="Open cart">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 7h12l-1 13H7L6 7z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+        <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">Handpicked · Made in India</p>
+          <h1>Comfort you can <em>wear</em> all day, every day.</h1>
+          <p class="lead">Soft cotton nighties and graceful kurtas in block prints, Kalamkari and chikankari — chosen with care by Sasi Designs.</p>
+          <div class="hero-cta">
+            <a href="#shop" class="btn btn-primary" data-filter-link="nighty">Shop Nighties</a>
+            <a href="#shop" class="btn btn-ghost" data-filter-link="kurta">Shop Kurtas</a>
+          </div>
+        </div>
+        <div class="hero-art" id="heroArt" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <section class="perks container">
+      <div class="perk"><strong>100% cotton</strong><span>Breathable fabrics for Indian summers</span></div>
+      <div class="perk"><strong>Sizes S – 4XL</strong><span>Relaxed, true-to-size fits</span></div>
+      <div class="perk"><strong>Cash on delivery</strong><span>Pay when your order arrives</span></div>
+      <div class="perk"><strong>7-day exchange</strong><span>Wrong size? We'll swap it</span></div>
+    </section>
+
+    <section class="shop" id="shop">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">The Collection</p>
+            <h2>Shop Sasi Designs</h2>
+          </div>
+          <div class="controls">
+            <div class="tabs" role="tablist" aria-label="Filter by category">
+              <button class="tab active" data-filter="all" role="tab" aria-selected="true">All</button>
+              <button class="tab" data-filter="nighty" role="tab" aria-selected="false">Nighties</button>
+              <button class="tab" data-filter="kurta" role="tab" aria-selected="false">Kurtas</button>
+            </div>
+            <label class="sort">
+              <span class="visually-hidden">Sort by</span>
+              <select id="sortSelect">
+                <option value="featured">Featured</option>
+                <option value="low">Price: low to high</option>
+                <option value="high">Price: high to low</option>
+              </select>
+            </label>
+          </div>
+        </div>
+        <div class="grid" id="productGrid"></div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container about-inner">
+        <div class="about-art" aria-hidden="true">
+          <div class="motif"></div>
+        </div>
+        <div>
+          <p class="eyebrow">Our Story</p>
+          <h2>Clothes made for real days at home and out.</h2>
+          <p>Sasi Designs began with a simple idea: everyday Indian wear should feel as good as it looks. We work with small weavers and printers to bring you nighties that stay soft wash after wash and kurtas that move easily from office to evening.</p>
+          <p>Every piece is checked by hand before it leaves us, and every order is packed with care.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container contact-inner">
+        <div>
+          <p class="eyebrow">Get in touch</p>
+          <h2>Questions about size or fabric?</h2>
+          <p>Message us and we'll help you pick the right fit.</p>
+          <ul class="contact-list">
+            <li><strong>WhatsApp:</strong> <span data-store="phoneDisplay"></span></li>
+            <li><strong>Email:</strong> <a data-store="emailLink"></a></li>
+            <li><strong>Hours:</strong> Mon – Sat, 10 am – 7 pm</li>
+          </ul>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <label>Name<input name="name" required autocomplete="name"></label>
+          <label>Message<textarea name="message" rows="4" required></textarea></label>
+          <button class="btn btn-primary" type="submit">Send on WhatsApp</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <span class="logo-text">Sasi <em>Designs</em></span>
+        <p>Indian nighties &amp; kurtas, handpicked with love.</p>
+      </div>
+      <p class="copy">© <span id="year"></span> Sasi Designs. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Product quick view -->
+  <div class="modal" id="productModal" hidden>
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="icon-close" data-close aria-label="Close">&times;</button>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+
+  <!-- Cart drawer -->
+  <div class="drawer" id="cartDrawer" hidden>
+    <div class="modal-backdrop" data-close-cart></div>
+    <aside class="drawer-panel" role="dialog" aria-modal="true" aria-labelledby="cartTitle">
+      <div class="drawer-head">
+        <h3 id="cartTitle">Your Bag</h3>
+        <button class="icon-close" data-close-cart aria-label="Close cart">&times;</button>
+      </div>
+      <div class="drawer-items" id="cartItems"></div>
+      <div class="drawer-foot" id="cartFoot"></div>
+    </aside>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="products.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
