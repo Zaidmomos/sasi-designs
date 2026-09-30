@@ -1,0 +1,15 @@
+:root { --bg: #fbf6ef; --ink: #2b1d17; --muted: #74645a; --line: #eadfd2; --brand: #a23b2a; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.7 "Mulish", system-ui, sans-serif; }
+header { border-bottom: 1px solid var(--line); background: #fff; }
+.wrap { width: min(760px, 100% - 32px); margin: 0 auto; }
+header .wrap { display: flex; justify-content: space-between; align-items: center; height: 64px; }
+.logo { font: 600 1.5rem/1 "Cormorant Garamond", Georgia, serif; text-decoration: none; color: var(--ink); }
+.logo em { color: var(--brand); }
+main { padding: 2.5rem 0 4rem; }
+h1 { font: 600 2.4rem/1.15 "Cormorant Garamond", Georgia, serif; margin: 0 0 .3rem; }
+h2 { font-size: 1.1rem; margin: 2rem 0 .4rem; }
+.updated { color: var(--muted); font-size: .9rem; margin-bottom: 2rem; }
+a { color: var(--brand); }
+footer { border-top: 1px solid var(--line); padding: 1.5rem 0; font-size: .88rem; color: var(--muted); }
+footer .wrap { display: flex; gap: 1.2rem; flex-wrap: wrap; }

@@ -1,0 +1,27 @@
+-- Sample products so the shop isn't empty on day one.
+-- Edit or hide them from the admin panel once your real products are in.
+insert into public.products (type, name, price, mrp, fabric, colors, pattern, tag, sort_order, description) values
+  ('nighty', 'Jaipur Buti Cotton Nighty', 649, 899, 'Pure cotton, hand block print', array['#f3d9c4','#b5452f'], 'buti', 'Bestseller', 10,
+   'Feather-light Jaipuri cotton with tiny hand-stamped butis. Front zip for easy wear, side pockets and a relaxed A-line fall.'),
+  ('nighty', 'Indigo Dabu Maxi Nighty', 749, 999, 'Cotton cambric, dabu print', array['#2f4a78','#e9e3d6'], 'floral', null, 20,
+   'Deep indigo dabu print with a soft yoke and half sleeves. Breathable enough for hot nights, pretty enough for mornings.'),
+  ('nighty', 'Mint Stripe Feeding Nighty', 699, 949, 'Soft cotton hosiery', array['#cfe6da','#3f7f68'], 'stripe', 'Maternity', 30,
+   'Discreet dual feeding zips hidden in the pleats. Stretchy, gentle cotton that is kind to new mothers.'),
+  ('nighty', 'Rose Paisley Rayon Nighty', 599, 799, 'Rayon, digital print', array['#f2c6cf','#9c3b56'], 'paisley', null, 40,
+   'Fluid rayon that drapes beautifully, with a classic paisley print and lace-trimmed neckline.'),
+  ('nighty', 'Mustard Check Button-Down Nighty', 679, 899, 'Cotton flex', array['#f0cf7a','#7a5a12'], 'check', null, 50,
+   'Full front button placket, patch pocket and a cheerful mustard check. A home-day favourite.'),
+  ('nighty', 'Ivory Chikan Lace Nighty', 849, 1199, 'Cotton voile with lace', array['#f6f0e4','#b99c6b'], 'plain', 'New', 60,
+   'Airy ivory voile finished with chikankari-inspired lace at the yoke and hem. Fully lined for comfort.'),
+  ('kurta', 'Kalamkari Straight Kurta', 1099, 1499, 'Cotton, Kalamkari print', array['#e6c9a0','#6e2f1f'], 'paisley', 'Bestseller', 70,
+   'Earthy Kalamkari motifs on a straight-cut cotton kurta with a mandarin collar and three-quarter sleeves.'),
+  ('kurta', 'Teal Chikankari Kurta', 1399, 1899, 'Georgette with chikankari', array['#2f7a7a','#eaf2ef'], 'floral', 'New', 80,
+   'Lucknowi chikankari embroidery on flowing teal georgette. Comes with a matching slip.'),
+  ('kurta', 'Maroon Bandhani A-Line Kurta', 1199, 1599, 'Cotton silk, bandhani', array['#7c1f2b','#f3c9a7'], 'buti', null, 90,
+   'Festive maroon bandhani in a flattering A-line cut with gota detailing at the neck.'),
+  ('kurta', 'Sage Pinstripe Office Kurta', 899, 1199, 'Cotton linen', array['#b9c9a8','#4c5b3c'], 'stripe', null, 100,
+   'Crisp cotton-linen with fine pinstripes, side slits and pockets. Made for workdays.'),
+  ('kurta', 'Sunflower Anarkali Kurta', 1499, 1999, 'Rayon, foil print', array['#f2b632','#8a3d0c'], 'floral', null, 110,
+   'Twirl-worthy anarkali flare in sunshine yellow with delicate foil floral print.'),
+  ('kurta', 'Classic White Cotton Kurta', 799, 999, 'Pure cotton', array['#fbf8f2','#8b7b62'], 'plain', null, 120,
+   'The everyday essential: a clean white cotton kurta with pintucks at the yoke. Pairs with everything.');
