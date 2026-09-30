@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="announce">Free shipping across India on orders above ₹999 · Easy 7-day exchange</div>
+  <div class="announce" id="announce">Free shipping across India on orders above ₹999 · Easy 7-day exchange</div>
 
   <header class="site-header">
     <div class="container header-inner">
@@ -56,7 +56,7 @@
     <section class="perks container">
       <div class="perk"><strong>100% cotton</strong><span>Breathable fabrics for Indian summers</span></div>
       <div class="perk"><strong>Sizes S – 4XL</strong><span>Relaxed, true-to-size fits</span></div>
-      <div class="perk"><strong>Cash on delivery</strong><span>Pay when your order arrives</span></div>
+      <div class="perk"><strong>COD &amp; UPI</strong><span>Pay online or when your order arrives</span></div>
       <div class="perk"><strong>7-day exchange</strong><span>Wrong size? We'll swap it</span></div>
     </section>
 
@@ -128,6 +128,13 @@
         <span class="logo-text">Sasi <em>Designs</em></span>
         <p>Indian nighties &amp; kurtas, handpicked with love.</p>
       </div>
+      <nav class="footer-links" aria-label="Policies">
+        <a href="policies/shipping.html">Shipping</a>
+        <a href="policies/refund.html">Returns &amp; Refunds</a>
+        <a href="policies/privacy.html">Privacy</a>
+        <a href="policies/terms.html">Terms</a>
+        <a href="policies/contact.html">Contact</a>
+      </nav>
       <p class="copy">© <span id="year"></span> Sasi Designs. All rights reserved.</p>
     </div>
   </footer>
@@ -156,7 +163,8 @@
 
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
-  <script src="products.js"></script>
+  <script src="config.js"></script>
+  <script src="garments.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
